@@ -1,0 +1,38 @@
+body {
+  background-image: url(../images/2014-05-23.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#464646;
+  margin: 0;
+  font-family: tahoma;
+}
+
+.container {
+	position: relative;
+}
+
+h1 {
+	text-align: center;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: normal;
+	position: fixed;
+	top: 40%;
+	width: 100%;
+	padding: 10px 0;
+}
+
+h1:before {
+	background-color: #ccc;
+	-webkit-opacity: 0.5;
+ 	-moz-opacity: 0.5;
+ 	opacity: 0.5;
+ 	display: block;
+ 	width: 100%;
+ 	content: "";
+ 	height: 45px;
+ 	position: absolute;
+ 	top: 0px;
+}
