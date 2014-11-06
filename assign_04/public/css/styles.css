@@ -1,0 +1,8 @@
+.container h1 {
+	font-size: 16px; border-bottom: 1px solid silver;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+}
