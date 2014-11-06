@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>assignment 3</title>
+
+    <!-- Bootstrap -->
+    <link href="/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Assignment III</h1>
+			<table id="result">
+				<tr>
+					<td>&nbsp;</td>
+					<td>Dessert</td>
+					<td>Material</td>
+					<td>Prize</td>
+				</tr>
+			</table>
+		</div>
+		<script src="/lib/jquery/dist/jquery.min.js"></script>
+		<script>
+			$.ajax({
+				url:"/dessert",
+				type: "GET",
+				dataType: "JSON",
+				success:function(dessert){
+					for (var i = 0; i < dessert.length; i++){
+						$("#result").append("<tr><td><img src=/images/" + dessert[i].picture + " width='50'></d><td>" + dessert[i].type + "</td><td>" + dessert[i].material + "</td><td>" + dessert[i].prize + "</td></tr>");
+					}
+					console.log(dessert);
+				}
+			});
+		</script>
+	</body>
+
+</html>

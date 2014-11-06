@@ -1,0 +1,18 @@
+h1 {
+  font: 14px/1.5 Helvetica, arial, sans-serif;
+}
+table {
+  width: 500px;
+  border-bottom: 1px solid #c0c0c0;
+}
+table tr td {
+  padding: 5px 10px;
+  text-align: center;
+  font-family: tahoma;
+  font-size: 13px;
+}
+table tr:first-child {
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 1px solid #c0c0c0;
+}
