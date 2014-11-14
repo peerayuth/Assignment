@@ -1,0 +1,15 @@
+#container {
+	width: auto;
+	max-width: 680px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-size: 14px;
+}
+
+form {
+	border: 1px solid #e0e0e0;
+	padding: 20px;
+}
